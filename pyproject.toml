@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tr-price-tracker-public"
+version = "0.1.0"
+description = "Archived notes and fixture-only demo from a retired personal TR price tracker."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ronovatr" }]
+keywords = ["archive", "price-tracker", "sqlite", "telegram", "fixtures"]
+dependencies = [
+  "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Repository = "https://github.com/ronovatr/tr-price-tracker-public"
+Issues = "https://github.com/ronovatr/tr-price-tracker-public/issues"
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+src = ["py.typed"]

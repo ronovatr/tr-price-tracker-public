@@ -1,0 +1,50 @@
+# Secrets & credentials - never commit
+.env
+.env.*
+!.env.example
+*.pem
+proxies.txt
+isp_proxies.txt
+
+# Databases & local state
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Logs & scratch
+*.log
+logs/
+charts/
+*.png
+*.debug.html
+page.html
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw robots fetch cache (regenerate; do not treat as permission)
+_robots_raw/
